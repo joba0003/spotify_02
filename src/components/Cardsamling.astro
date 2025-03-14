@@ -3,5 +3,13 @@ const {titel} = Astro.props
 ---
 
 <h2>{titel}</h2>
+<div class="wrapper">
 <slot />
+</div>
 
+
+<style>
+    .wrapper {display: grid;
+        gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
+</style>
