@@ -1,11 +1,18 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from '../layouts/Layout.astro';
+import Cardplayliste from '../components/Cardsamling.astro';
+import Card from '../components/Card.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout titel="spotify">
+<Cardplayliste titel="Fedt mix til jose">	
+<Card farve="blue" mix="02" kunstnerliste="Hund i snor, Lady GAGA, Tim Kristensen" imgsrc="https://via.assets.so/album.png?id=1&q=95&w=360&h=360&fit=fill" />
+<Card farve="blue" mix="02" kunstnerliste="Hund i snor, Lady GAGA, Tim Kristensen" imgsrc="https://via.assets.so/album.png?id=2&q=95&w=360&h=360&fit=fill" />
+<Card farve="blue" mix="02" kunstnerliste="Hund i snor, Lady GAGA, Tim Kristensen" imgsrc="https://via.assets.so/album.png?id=3&q=95&w=360&h=360&fit=fill" />
+<Card farve="blue" mix="02" kunstnerliste="Hund i snor, Lady GAGA, Tim Kristensen" imgsrc="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill" />
+
+</Cardplayliste>
+<Cardplayliste titel="Jeg er mega sej hahahah"/>
+</Cardplayliste>
 </Layout>
